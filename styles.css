@@ -14,10 +14,21 @@ body {
 header {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
   background-color: #c1c3c6;
   align-items: center;
   padding: 0.5rem 0;
   font-family: Verdana, sans-serif;
+}
+
+a:hover,
+a:focus {
+  color: #343434;
+}
+
+a:active {
+  color: rgb(80, 0, 0);
 }
 
 header ul {
