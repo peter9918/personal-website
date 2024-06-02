@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,6 +8,7 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background-image: url("../images/back-2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -59,7 +63,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: auto;
-  max-width: 100ch;
+  width: 60%;
 }
 
 h2 {
@@ -69,11 +73,28 @@ h2 {
   text-align: center;
 }
 
+.content img {
+  width: 80%;
+  height: auto;
+}
+
+.content .description {
+  margin: 1rem 0;
+}
+
+strong {
+  color: red;
+}
+
+.project-links {
+  margin-bottom: 1rem;
+}
+
 .accordion li {
   list-style: none;
   width: 100%;
   margin: 1rem 0;
-  padding: 10px;
+  padding: .5rem;
   border-radius: 8px;
   background-color: #e3edf7;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5),
@@ -83,7 +104,7 @@ h2 {
 .accordion li label {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: .5rem;
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
@@ -115,4 +136,13 @@ input[type="checkbox"] {
 
 .accordion input[type="checkbox"]:checked + label::before {
   content: "-";
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    max-width: 80%;
+  }
+  img {
+    width: 100%;
+  }
 }
