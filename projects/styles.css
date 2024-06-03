@@ -10,6 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-image: url("../images/back-2.jpg");
+  background-color: #c1c3c6;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -140,7 +141,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 800px) {
   .wrapper {
-    max-width: 80%;
+    width: 90%;
   }
   img {
     width: 100%;
