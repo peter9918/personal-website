@@ -54,3 +54,28 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: .7rem;
+}
+
+.s1-main {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  background-color: #c1c3c6;
+}
+
+.s1-left {
+  width: 35%;
+  background-color: #3f3f3f;
+}
+
+.s1-right {
+  
+}
+
+.s1-right p {
+  font-size: 1.2rem;
+}
+

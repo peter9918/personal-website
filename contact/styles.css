@@ -53,17 +53,63 @@ a {
   text-decoration: none;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .wrapper {
   background-color: #e3edf7;
   width: fit-content;
   padding: 1.5rem;
   margin: 2rem ;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
   font-size: 1.3rem;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5),
               -6px -6px 10px -1px rgba(0, 0, 0, 0.5);
 }
 
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.wrapper input {
+  padding: .5rem;
+  width: 70%;
+  border: 1px solid #000;
+  border-radius: 1rem;
+}
+
+.wrapper textarea {
+  height: 8rem;
+  padding: .5rem;
+  width: 18rem;
+  max-width: 90%;
+  max-height: 50vh;
+  min-width: fit-content;
+  min-height: 5rem;
+  border: 1px solid #000;
+  border-radius: 1rem;
+}
+
+.wrapper button {
+  font-size: 1.1rem;
+  width: fit-content;
+  padding: .1rem .3rem;
+  background-color: #71b0fc;
+  border-radius: 10%;
+  border: 2px #444 solid ;
+}
+
+@media only screen and (min-width: 700px) {
+  .container {
+    justify-content: flex-start;
+  }
+  .wrapper textarea {
+    height: 16rem;
+    width: 32rem;
+    max-width: 90ch;
+  }
+}

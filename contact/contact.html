@@ -6,6 +6,7 @@
   <title>PETER | CONTACT</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <ul>
@@ -19,18 +20,21 @@
       <li><a href="https://www.linkedin.com/in/peter-nicola-pencov-181952290" rel="noreferrer" target="_blank"><img src="../images/linkedin.png" alt="My linkedin home page" class="social-icon"></a></li>
     </ul>
   </header>
-
-  <main>
-    <div>
-      <ul class="wrapper">
-        <li>
-          <p><strong>EMAIL</strong>: pnpencov@gmail.com</p>
-        </li>
-        <li>
-          <p><strong>PHONE</strong>: +40 722 598 658</p>
-        </li>
-      </ul>
+  <div class="container">
+    <div class="wrapper">
+      <form name="myform" action="https://formspree.io/f/mrgnwode" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="text" name="email" placeholder="Email adress" required>
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="button" onclick="submitForm()">Send</button>
+      </form>
     </div>
-  </main>
+  </div>
+  <script>
+    function submitForm() {
+      document.myform.submit()
+      document.myform.reset()
+    }
+  </script>  
 </body>
 </html>
