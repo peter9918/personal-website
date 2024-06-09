@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url("../images/back-2.jpg");
+  background-image: url("../images/back-3.jpg");
   background-color: #c1c3c6;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,15 +20,20 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
-  background-color: #c1c3c6;
+  background-color: #dff3ff;
   align-items: center;
   padding: 0.5rem 0;
   font-family: Verdana, sans-serif;
 }
 
+header a {
+  color: rgb(35, 35, 35);
+  text-decoration: none;
+}
+
 a:hover,
 a:focus {
-  color: #343434;
+  color: #808080;
 }
 
 a:active {
@@ -46,11 +51,6 @@ header ul {
 
 ul {
   list-style: none;
-}
-
-a {
-  color: rgb(35, 35, 35);
-  text-decoration: none;
 }
 
 .container {

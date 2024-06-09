@@ -9,10 +9,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url("images/back-2.jpg");
+  background-image: url("images/back-3.jpg");
   background-color: #c1c3c6;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center;
+  /* background-attachment: fixed; */
   background-size: cover;
 }
 
@@ -21,15 +22,20 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
-  background-color: #c1c3c6;
+  background-color: #dff3ff;
   align-items: center;
   padding: 0.5rem 0;
   font-family: Verdana, sans-serif;
 }
 
+header a {
+  color: rgb(35, 35, 35);
+  text-decoration: none;
+}
+
 a:hover,
 a:focus {
-  color: #343434;
+  color: #808080;
 }
 
 a:active {
@@ -49,33 +55,83 @@ ul {
   list-style: none;
 }
 
-a {
-  color: rgb(35, 35, 35);
-  text-decoration: none;
+h1 {
+  color: #3f3f3f;
+  font-size: 4rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: .7rem;
+main p {
+  color: #3f3f3f;
+  font-size: 1.5rem;
+
+}
+
+main a {
+  color: #3f3f3f;
+  text-decoration: underline;
 }
 
 .s1-main {
+  /* background-color: #c1c3c6; */
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-around;
-  padding: 1.5rem;
-  background-color: #c1c3c6;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: #dff3ff; 
 }
 
 .s1-left {
-  width: 35%;
-  background-color: #3f3f3f;
+  text-align: center;
 }
 
 .s1-right {
-  
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.s1-right p {
-  font-size: 1.2rem;
+.projects-link:hover,
+.projects-link:focus {
+  transform: scale(1.2);
+  transition-duration: 1s;
 }
+
+.projects-link:active {
+  transform: scale(1);
+  transition-duration: 0s;
+}
+
+.s1-right a {
+  font-size: 1.2rem;
+  padding: .5rem;
+  border-radius: 15%;
+  color: #eee;
+  text-decoration: none;
+  background-color: #2424ff;
+}
+
+.s2-main {
+  margin: 10% 15%;
+}
+
+.s2-main p {
+  color: #eee;
+  font-size: 1.5rem;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.quote-by {
+  margin:1rem 2rem 0 ;
+  text-align: end;
+}
+
+
+
 
